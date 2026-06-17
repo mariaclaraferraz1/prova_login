@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Portal do Candidato</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portal do Candidato - ENEM</h1>
+    </header>
+    
+    <div class="cadastro">
+        <h2>Ficha de Inscrição</h2>
+        <form action="#" method="post">
+
+        <!-- nome -->
+        <label for="nome">1. Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <!-- email -->
+        <label for="email">2. E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- telefone -->
+        <label for="telefone">3. Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+        <!-- mae -->
+        <label for="mae">4. Nome da Mãe:</label>
+        <input type="text" id="mae" name="mae" required>
+
+        <!-- pai -->
+        <label for="pai">5. Nome do Pai:</label>
+        <input type="text" id="pai" name="pai">
+
+        <!-- rua -->
+        <label for="rua">6. Endereço (Rua/Avenida):</label>
+        <input type="text" id="rua" name="rua" required>
+
+        <!-- numero -->
+        <label for="numero">7. Número:</label>
+        <input type="number" id="numero" name="numero" required>
+
+        <!-- cidade -->
+        <label for="cidade">8. Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <!-- estado -->
+        <label for="estado">9. Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+        
+        <!-- país -->
+        <label for="pais">10. País:</label>
+        <input type="text" id="pais" name="pais" required>
+    
+        <!-- escolaridade -->
+        <label for="situacao">11. Situação do Ensino Médio:</label>
+        <select id="situacao" required>
+            <option value="">Selecione...</option>
+            <option value="concluido">Já concluí</option>
+            <option value="cursando">Estou cursando</option>
+        </select>
+
+        <!-- escola -->
+        <label for="escola">12. Tipo de Escola:</label>
+        <select id="escola" required>
+            <option value="">Selecione...</option>
+            <option value="publica">Pública</option>
+            <option value="privada">Privada</option>
+        </select>
+
+        <!-- senha -->
+        <label for="senha">13. Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <!-- confirma senha -->
+        <label for="confirmarSenha">14. Confirmar Senha:</label>
+        <input type="password" id="confirmarSenha" required>
+
+        <button type="submit" class="btn-entrar">Salvar Inscrição</button>
+        <button type="button" id="btnVoltar" class="btn-entrar">Voltar</button>
+
+    </form>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+</html>
