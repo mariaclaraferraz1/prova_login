@@ -12,10 +12,11 @@
         <h1>Portal do Candidato - ENEM</h1>
     </header>
     
+    <!-- cadastro -->
     <div class="cadastro">
         <h2>Ficha de Inscrição</h2>
-        <form action="#" method="post">
-
+        
+        <form id="cadastroForm" method="post" novalidate>
         <!-- nome -->
         <label for="nome">1. Nome Completo:</label>
         <input type="text" id="nome" name="nome" required>
@@ -23,6 +24,7 @@
         <!-- email -->
         <label for="email">2. E-mail:</label>
         <input type="email" id="email" name="email" required>
+        <span id="erroEmail" class="erro"></span>
 
         <!-- telefone -->
         <label for="telefone">3. Telefone:</label>
@@ -75,16 +77,21 @@
         <!-- senha -->
         <label for="senha">13. Senha:</label>
         <input type="password" id="senha" name="senha" required>
+        <span id="erroSenha" class="erro"></span>
 
         <!-- confirma senha -->
         <label for="confirmarSenha">14. Confirmar Senha:</label>
         <input type="password" id="confirmarSenha" required>
+        <span id="erroConfirmarSenha" class="erro"></span>
 
-        <button type="submit" class="btn-entrar">Salvar Inscrição</button>
+        <button type="submit" id="btnSalvarInscricao" class="btn-entrar">Salvar Inscrição</button>
         <button type="button" id="btnVoltar" class="btn-entrar">Voltar</button>
 
     </form>
     </div>
+    <!-- fecha cadastro -->
+
+    
     <script src="cadastro.js"></script>
 </body>
 </html>
